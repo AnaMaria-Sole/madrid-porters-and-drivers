@@ -53,8 +53,9 @@ nav a:hover { color: #ffcc00; }
 }
 
 .carousel-slide img {
-    width: 100%;
-    border-radius: 10px;
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
 }
 
 .carousel-dots {
@@ -77,6 +78,17 @@ nav a:hover { color: #ffcc00; }
 }
 
 /* Content */
+.services-container {
+    max-width: 1000px;
+    background: #f9f9f9;
+    margin: 50px auto;
+    padding: 10px 10px;
+    text-align: center;
+}
+.services-section {
+    display: flex;
+    padding: 10px 10px;
+}
 .hero-section {
     padding: 50px 20px;
     text-align: center;
@@ -84,7 +96,7 @@ nav a:hover { color: #ffcc00; }
 
 .services-list {
     max-width: 900px;
-    margin: 30px auto;
+    margin: 5px auto;
     text-align: left;
 }
 
@@ -95,15 +107,14 @@ nav a:hover { color: #ffcc00; }
 
 .equipment-section {
     text-align: center;
-    margin: 50px auto;
+    margin: 5px auto;
     max-width: 700px;
 }
 
 .equipment-section img {
-    max-width: 55%;
+    max-width: 75%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .cta-button {
