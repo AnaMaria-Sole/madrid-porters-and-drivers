@@ -1,0 +1,164 @@
+/* ============================================= */
+/* MADRID PORTERS AND DRIVERS - COMPLETE STYLES  */
+/* ============================================= */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #fff;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #c8102e;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+}
+
+.logo img {
+    max-height: 90px;
+    width: auto;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav a:hover { color: #ffcc00; }
+
+/* Carousel */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    display: none;
+}
+
+.slide.active {
+    opacity: 1;
+    display: block;
+    z-index: 1;
+}
+
+.slide img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.dots {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active, .dot:hover {
+    background-color: #c8102e;
+}
+
+/* Content */
+.hero-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services-list {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.services-list li {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+.equipment-section {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 700px;
+}
+
+.equipment-section img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #25D366;
+    color: white;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 20px 10px;
+}
+
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    padding: 60px 20px 40px;
+    background: #2c2c2c;
+    color: #f1f1f1;
+}
+
+.footer a { color: #ffcc00; }
+.footer a:hover { color: #fff; }
+
+.footer-section h3 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    color: #aaa;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header-container { flex-direction: column; gap: 15px; }
+    .slide img { width: 90%; }
+    .equipment-section img { max-width: 80%; }
+}

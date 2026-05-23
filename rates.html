@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional English-speaking porters and drivers in Madrid. Careful furniture moving, packing, unpacking, disassembly, international moves & more.">
+    <meta name="keywords" content="madrid porters, movers madrid, furniture movers madrid, english speaking movers madrid, international moves madrid">
+    <meta name="author" content="Madrid Porters & Drivers">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Madrid Porters & Drivers - Professional Moving Services">
+    <meta property="og:description" content="Reliable English-speaking porters & drivers in Madrid, Spain">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://madridportersanddrivers.com">
+    <meta property="og:image" content="https://madridportersanddrivers.com/madrid-porters-family-moving-sofa-madrid-spain.webp">
+
+    <title>Madrid Porters & Drivers | Professional Moving Services in Madrid</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; background: #f8f8f8; color: #333; }
+
+        /* Brick Red Header */
+        header {
+            background: #e31e2c;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .logo img { height: 90px; }
+        .header-info h1 { 
+            color: white; 
+            font-size: 1.9rem; 
+            margin-bottom: 5px;
+        }
+        .header-info p {
+            color: #fff9c4;
+            font-size: 1.1rem;
+        }
+
+        /* Slideshow */
+        .slideshow-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            position: relative;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        .slide { display: none; width: 100%; }
+        .slide.active { display: block; }
+        .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 650px;
+            object-fit: cover;
+        }
+        .caption {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            background: rgba(227, 30, 44, 0.92);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Navigation */
+        .prev, .next {
+            position: absolute; top: 50%; transform: translateY(-50%);
+            background: rgba(0,0,0,0.6); color: white; border: none;
+            font-size: 28px; padding: 12px 16px; cursor: pointer;
+            border-radius: 50%; z-index: 10;
+        }
+        .prev { left: 15px; } .next { right: 15px; }
+        .prev:hover, .next:hover { background: #e31e2c; }
+
+        .dots { text-align: center; padding: 20px 0; background: #222; }
+        .dot {
+            display: inline-block; width: 14px; height: 14px;
+            margin: 0 6px; background: #666; border-radius: 50%;
+            cursor: pointer;
+        }
+        .dot.active { background: #e31e2c; transform: scale(1.2); }
+
+        /* Services */
+        .services {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .services h2 {
+            text-align: center;
+            color: #e31e2c;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            text-decoration: none;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+
+        /* Black & Yellow Footer */
+        footer {
+            background: #1a1a1a;
+            color: #ffcc00;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+        footer p {
+            margin: 8px 0;
+            font-size: 1.05rem;
+        }
+
+        @media (max-width: 768px) {
+            .logo img { height: 70px; }
+            .caption { font-size: 1rem; padding: 10px 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER - Brick Red -->
+    <header>
+        <div class="logo">
+            <img src="Madrid-porters-drivers-logo-trans-bkgrd.webp" alt="Madrid Porters & Drivers Logo" loading="lazy">
+        </div>
+        <div class="header-info">
+            <h1>Madrid Porters & Drivers</h1>
+            <p>English Speaking Professional Movers in Madrid</p>
+        </div>
+    </header>
+
+    <!-- SLIDESHOW -->
+    <div class="slideshow-container" id="slideshow">
+        <div class="slide active">
+            <img src="madrid-porters-family-moving-sofa-madrid-spain.webp" alt="Professional family and sofa moving service in Madrid" loading="lazy">
+            <div class="caption">Careful Family & Sofa Moving</div>
+        </div>
+        <div class="slide">
+            <img src="madrid-porters-outdoor-furniture-move-assistance-spain.webp" alt="Garden and outdoor furniture moving in Madrid" loading="lazy">
+            <div class="caption">Garden & Outdoor Furniture Moves</div>
+        </div>
+        <div class="slide">
+            <img src="madrid-porters-team-loading-international-lorry-spain.webp" alt="International moving and lorry loading in Madrid" loading="lazy">
+            <div class="caption">International Moves & Heavy Loading</div>
+        </div>
+        <div class="slide">
+            <img src="madrid-porters-carrying-furniture-up-stairs-madrid-spain.webp" alt="Furniture carrying up stairs service Madrid" loading="lazy">
+            <div class="caption">Stair Carrying – Any Floor</div>
+        </div>
+        <div class="slide">
+            <img src="madrid-porters-warehouse-goods-handling-loading-truck-spain.webp" alt="Warehouse goods handling and truck loading Madrid" loading="lazy">
+            <div class="caption">Warehouse & Professional Loading</div>
+        </div>
+        <div class="slide">
+            <img src="madrid-porters-furniture-disassembly-reassembly-service-spain.webp" alt="Furniture disassembly and reassembly service Madrid" loading="lazy">
+            <div class="caption">Expert Disassembly & Reassembly</div>
+        </div>
+    </div>
+
+    <div class="dots" id="dots"></div>
+
+    <!-- SERVICES SECTION -->
+    <section class="services">
+        <h2>Our Professional Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Packing & Unpacking</h3>
+                <p>Expert packing, bubble wrap protection and careful unpacking.</p>
+            </div>
+            <div class="service-card">
+                <h3>Loading & Unloading</h3>
+                <p>Safe loading and unloading of trucks and containers.</p>
+            </div>
+            <div class="service-card">
+                <h3>Furniture Disassembly</h3>
+                <p>Professional disassembly and reassembly of all furniture types.</p>
+            </div>
+            <div class="service-card">
+                <h3>Stair Carrying</h3>
+                <p>Specialists in carrying heavy items up and down stairs.</p>
+            </div>
+            <div class="service-card">
+                <h3>International Moves</h3>
+                <p>Full support for moves to UK, Europe and worldwide.</p>
+            </div>
+            <div class="service-card">
+                <h3>Professional Driving</h3>
+                <p>English-speaking drivers with large vehicle experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER - Black with Yellow Text -->
+    <footer>
+        <p><strong>Madrid Porters & Drivers</strong> © 2026 • All Rights Reserved</p>
+        <p>Professional English-Speaking Porters & Drivers in Madrid, Spain</p>
+        <p>Fast Response • Reliable Service • Careful Handling</p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/346XXXXXXXX" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+        💬
+    </a>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dotsContainer = document.getElementById('dots');
+        let autoPlay;
+
+        slides.forEach((_, i) => {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.onclick = () => goToSlide(i);
+            dotsContainer.appendChild(dot);
+        });
+
+        function showSlide(n) {
+            slides.forEach(s => s.classList.remove('active'));
+            slides[n].classList.add('active');
+            document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === n));
+        }
+
+        function goToSlide(n) {
+            currentSlide = n;
+            showSlide(currentSlide);
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function startAutoPlay() {
+            autoPlay = setInterval(nextSlide, 5000);
+        }
+
+        const container = document.getElementById('slideshow');
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'prev'; prevBtn.innerHTML = '❮';
+        prevBtn.onclick = () => { clearInterval(autoPlay); currentSlide = (currentSlide - 1 + slides.length) % slides.length; showSlide(currentSlide); startAutoPlay(); };
+
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'next'; nextBtn.innerHTML = '❯';
+        nextBtn.onclick = () => { clearInterval(autoPlay); nextSlide(); startAutoPlay(); };
+
+        container.appendChild(prevBtn);
+        container.appendChild(nextBtn);
+
+        container.addEventListener('mouseenter', () => clearInterval(autoPlay));
+        container.addEventListener('mouseleave', startAutoPlay);
+
+        window.onload = startAutoPlay;
+    </script>
+
+</body>
+</html>
