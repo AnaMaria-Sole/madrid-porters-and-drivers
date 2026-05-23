@@ -79,9 +79,8 @@ nav a:hover { color: #ffcc00; }
 
 /* Content */
 .services-container {
-    max-width: 1000px;
     background: #f9f9f9;
-    margin: 50px auto;
+    margin: 0px auto;
     padding: 10px 10px;
     text-align: center;
 }
@@ -90,12 +89,25 @@ nav a:hover { color: #ffcc00; }
     padding: 10px 10px;
 }
 .hero-section {
-    padding: 50px 20px;
+   padding-top: 40px;
     text-align: center;
 }
 .hero-content-2 {
     max-width: 600px;
     margin: auto;
+}
+.service-title {
+    font-size: 1.75em;
+    color: #0057B8;
+    text-align: left;
+    margin: 5px auto;
+    padding-left: 40px;
+}
+.equipment-title {
+    font-size: 1.75em;
+    color: #0057B8;
+    text-align: center;
+    margin: 5px auto;
 }
 .services-list {
     max-width: 900px;
@@ -110,7 +122,6 @@ nav a:hover { color: #ffcc00; }
 
 .equipment-section {
     text-align: center;
-    margin: 5px auto;
     max-width: 700px;
 }
 
