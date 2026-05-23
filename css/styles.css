@@ -93,7 +93,10 @@ nav a:hover { color: #ffcc00; }
     padding: 50px 20px;
     text-align: center;
 }
-
+.hero-content-2 {
+    max-width: 600px;
+    margin: auto;
+}
 .services-list {
     max-width: 900px;
     margin: 5px auto;
