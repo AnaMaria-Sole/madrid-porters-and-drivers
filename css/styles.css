@@ -142,6 +142,15 @@ nav a:hover { color: #ffcc00; }
     text-decoration: none;
     margin: 20px 10px;
 }
+/*review slider*/
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
 
 /* Footer */
 .footer {
