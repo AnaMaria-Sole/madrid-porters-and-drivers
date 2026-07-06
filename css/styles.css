@@ -91,11 +91,26 @@ nav a:hover { color: #ffcc00; }
 .hero-section {
    padding-top: 40px;
     text-align: center;
+   /* text-align: justify;*/
+}
+.hero-p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 10px auto;
     text-align: justify;
 }
-.hero-content-2 {
+.hero-content-2{
     max-width: 600px;
     margin: auto;
+     
+}
+.hero-h1 {
+    max-width: 600px;
+    font-size: 1.75em;
+    color: #0057B8;
+    text-align: center;
+    margin: 5px auto;
+    padding-left: 40px;
 }
 .service-title {
     font-size: 1.75em;
@@ -183,5 +198,7 @@ nav a:hover { color: #ffcc00; }
     .header-container { flex-direction: column; gap: 15px; }
     .carousel-slide img { width: 90%; }
     .equipment-section img { max-width: 80%; }
+    .services-section { flex-direction: column-reverse; }
+    .hero-h1, .hero-p { padding-left: 20px; padding-right: 20px; }
 }
 
