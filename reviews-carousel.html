@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="reviews.css">
+  <title>Reviews Carousel</title>
+
+</head>
+<body>
+
+  <div class="section-header">
+    <h2>What our customers say</h2>
+    <p>Real reviews from verified customers across the UK</p>
+  </div>
+
+  <div class="carousel-wrapper" id="carouselWrapper">
+    <div class="carousel-track" id="carouselTrack"></div>
+  </div>
+
+  <div class="carousel-controls">
+    <button class="arrow-btn" id="prevBtn" aria-label="Previous">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+    <div class="dots" id="dotsContainer"></div>
+    <button class="arrow-btn" id="nextBtn" aria-label="Next">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+  <p class="pause-hint" id="pauseHint">Auto-playing · hover to pause</p>
+
+  
+    </body>
+</html>
