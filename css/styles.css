@@ -91,6 +91,7 @@ nav a:hover { color: #ffcc00; }
 .hero-section {
    padding-top: 40px;
     text-align: center;
+    text-align: justify;
 }
 .hero-content-2 {
     max-width: 600px;
