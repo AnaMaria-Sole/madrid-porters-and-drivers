@@ -151,17 +151,53 @@ nav a:hover {
   border-radius: 12px;
 }
 
-.cta-button {
-  display: inline-block;
-  padding: 16px 40px;
-  background: #25d366;
-  color: white;
-  font-size: 1.25em;
-  font-weight: bold;
-  border-radius: 12px;
-  text-decoration: none;
-  margin: 20px 10px;
+/*Contact buttons*/
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* gap-6 */
+    justify-content: center;
 }
+
+.btn {
+    padding: 2rem 3rem; /* py-8 px-12 */
+    border-radius: 1.5rem; /* rounded-3xl */
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 600; /* font-semibold */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-whatsapp {
+    background-color: #22c55e; /* bg-green-500 */
+    color: #ffffff;
+    gap: 0.5rem; /* gap-2 */
+}
+
+/*.btn-email {
+    background-color: #1870ec;
+    color: #fcfcfc;
+    gap: 1rem;
+} */
+
+
+.icon {
+    object-fit: contain;
+}
+
+.icon-whatsapp {
+    height: 3rem; /* h-12 */
+}
+
+/*
+.icon-email {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+*/
 /*review slider*/
 .slide {
   display: none;
@@ -223,4 +259,7 @@ nav a:hover {
   .equipment-title {
     margin: 5px auto;
   }
+  .contact-buttons {
+        flex-direction: row; /* md:flex-row */
+    }
 }
