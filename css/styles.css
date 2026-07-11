@@ -3,207 +3,224 @@
 /* ============================================= */
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #fff;
 }
 
 /* Header */
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: #0057B8;
-    color: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #0057b8;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
 }
 
 .logo img {
-    max-height: 90px;
-    width: auto;
+  max-height: 90px;
+  width: auto;
 }
 
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
-nav a:hover { color: #ffcc00; }
+nav a:hover {
+  color: #ffcc00;
+}
 
 /* Carousel */
 .carousel {
-    position: relative;
-    max-width: 900px;
-    margin: auto;
+  position: relative;
+  max-width: 900px;
+  margin: auto;
 }
 
 .carousel-slide {
-    display: none;
+  display: none;
 }
 
 .carousel-slide.active {
-    display: block;
+  display: block;
 }
 
 .carousel-slide img {
-    width: fit-content;
-    max-width: 100%;
-    height: auto;
+  width: fit-content;
+  max-width: 100%;
+  height: auto;
 }
 
 .carousel-dots {
-    text-align: center;
-    margin-top: 15px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .carousel-dot {
-    width: 12px;
-    height: 12px;
-    margin: 0 5px;
-    border-radius: 50%;
-    background: #bbb;
-    display: inline-block;
-    cursor: pointer;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #bbb;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .carousel-dot.active {
-    background: #333;
+  background: #333;
 }
 
 /* Content */
 .services-container {
-    max-width: 600px;
-    background: #f9f9f9;
-    margin: 0px auto;
-    padding: 10px 10px;
-    text-align: center;
+  max-width: 600px;
+  background: #f9f9f9;
+  margin: 0px auto;
+  padding: 10px 10px;
+  text-align: center;
 }
 .services-section {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    gap: 20px;
-    padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 10px;
 }
 .hero-section {
-   padding-top: 40px;
-    text-align: center;
-   /* text-align: justify;*/
+  padding-top: 40px;
+  text-align: center;
+  /* text-align: justify;*/
 }
 .hero-p {
-    font-size: 1.1em;
-    max-width: 800px;
-    margin: 10px auto;
-    text-align: justify;
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 10px auto;
+  text-align: justify;
 }
-.hero-content-2{
-    max-width: 600px;
-    margin: auto;
-     
+.hero-content-2 {
+  max-width: 600px;
+  margin: auto;
 }
 .hero-h1 {
-    max-width: 600px;
-    font-size: 1.75em;
-    color: #0057B8;
-    text-align: center;
-    margin: 5px auto;
-    padding-left: 40px;
+  max-width: 600px;
+  font-size: 1.75em;
+  color: #0057b8;
+  text-align: center;
+  margin: 5px auto;
+  padding-left: 40px;
 }
 .service-title {
-    font-size: 1.75em;
-    color: #0057B8;
-    text-align: left;
-    margin: 5px auto;
-    padding-left: 40px;
+  font-size: 1.75em;
+  color: #0057b8;
+
+  margin: 5px auto;
 }
 .equipment-title {
-    font-size: 1.75em;
-    color: #0057B8;
-    text-align: center;
-    margin: 5px 25%;
+  font-size: 1.75em;
+  color: #0057b8;
+  text-align: center;
+  margin: 5px 25%;
 }
 .services-list {
-    max-width: 900px;
-    margin: 5px auto;
-    text-align: left;
+  max-width: 900px;
+  margin: 5px auto;
+  text-align: left;
 }
 
 .services-list li {
-    margin: 15px 0;
-    font-size: 1.1em;
+  margin: 15px 0;
+  font-size: 1.1em;
 }
 
 .equipment-section {
-    text-align: center;
-    max-width: 700px;
+  text-align: center;
+  max-width: 700px;
 }
 
 .equipment-section img {
-    max-width: 75%;
-    height: auto;
-    border-radius: 12px;
+  max-width: 75%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 16px 40px;
-    background: #25D366;
-    color: white;
-    font-size: 1.25em;
-    font-weight: bold;
-    border-radius: 12px;
-    text-decoration: none;
-    margin: 20px 10px;
+  display: inline-block;
+  padding: 16px 40px;
+  background: #25d366;
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  margin: 20px 10px;
 }
 /*review slider*/
 .slide {
-    display: none;
+  display: none;
 }
 
 .slide.active {
-    display: block;
+  display: block;
 }
-
 
 /* Footer */
 .footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 30px;
-    padding: 60px 20px 40px;
-    background: #2c2c2c;
-    color: #f1f1f1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  padding: 60px 20px 40px;
+  background: #2c2c2c;
+  color: #f1f1f1;
 }
 
-.footer a { color: #ffcc00; }
-.footer a:hover { color: #fff; }
+.footer a {
+  color: #ffcc00;
+}
+.footer a:hover {
+  color: #fff;
+}
 
 .footer-section h3 {
-    color: #ffcc00;
-    margin-bottom: 15px;
+  color: #ffcc00;
+  margin-bottom: 15px;
 }
 
 .footer-bottom {
-    text-align: center;
-    padding: 20px;
-    background: #1a1a1a;
-    color: #aaa;
+  text-align: center;
+  padding: 20px;
+  background: #1a1a1a;
+  color: #aaa;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-    .header-container { flex-direction: column; gap: 15px; }
-    .carousel-slide img { width: 100%; }
-    .equipment-section img { max-width: 80%; }
-    .services-section { flex-direction: column-reverse; }
-    .hero-h1, .hero-p { padding-left: 20px; padding-right: 20px; }
-    .equipment-title { margin: 5px auto; }
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .carousel-slide img {
+    width: 100%;
+  }
+  .equipment-section img {
+    max-width: 80%;
+  }
+  .services-section {
+    flex-direction: column;
+  }
+  .hero-h1,
+  .hero-p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .equipment-title {
+    margin: 5px auto;
+  }
 }
-
