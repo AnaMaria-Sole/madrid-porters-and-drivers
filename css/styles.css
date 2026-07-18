@@ -397,8 +397,23 @@ nav a:hover {
 .nationwide-title {
   font-size: 1.75em;
   color: #0057b8;
+margin: 5px auto;
+}
 
-  margin: 5px auto;
+nationwide-1 {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 1.5rem;
+  color: #334155;
+}
+
+.nationwide-2 {
+  font-size: 1.15rem;
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 1.8rem;
+  color: #475569;
 }
 
 /* Map section */
@@ -412,6 +427,12 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
+.map-embed {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 3px solid var(--primary);
+}
 
 /* Mobile */
 @media (max-width: 768px) {
@@ -454,6 +475,12 @@ nav a:hover {
   .services-section {
     flex-direction: column;
   }
+
+  .nationwide-title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
   .hero-h1,
   .hero-p {
     padding-left: 20px;
