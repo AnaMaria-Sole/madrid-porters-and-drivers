@@ -120,19 +120,21 @@
                     available. Photography and extras quoted separately or included on larger jobs.</p>
             </section>
         </section>
-        <div class="contact-buttons">
-            <a href="https://wa.me/34640194369" target="_blank" class="btn btn-whatsapp">
-                <img src="images/whatsapp-icon-white.svg" class="icon icon-whatsapp" alt="WhatsApp">
-                WhatsApp
-            </a>
-            <a href="mailto:madridpandd@gmail.com" class="btn btn-email">
-                
-                Email us
-            </a>
-      
-        </div>
+        <section class="contact-buttons">
+    <p class="contact-heading"><strong>Ready to book?</strong></p>
+    <div class="contact-buttons-row">
+        <a href="https://wa.me/34640194369" target="_blank" class="btn btn-whatsapp">
+            <img src="images/whatsapp-icon-white.svg" class="icon icon-whatsapp" alt="WhatsApp">
+            WhatsApp
+        </a>
+        <a href="mailto:madridpandd@gmail.com" class="btn btn-email">
+            <img src="images/email-icon-white.svg" class="icon icon-email" alt="Email" onerror="this.style.display='none';">
+            madridpandd@gmail.com
+        </a>
+    </div>
+</section>
     </section>
-    </main>
+  
 
     <footer>
         <!-- Your footer here -->
@@ -146,6 +148,21 @@
             new Carousel(document.getElementById("mainCarousel"));
         });
     </script>
+    <!--whatsapp widget-->
+    <div class="wa-widget">
+  <div class="wa-bubble" id="waBubble">
+    <button class="wa-bubble-close" id="waBubbleClose" aria-label="Close">×</button>
+    <p class="wa-bubble-text">Hi! Need a porter or a driver? Chat with us now.</p>
+    <a href="https://wa.me/34640194369?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20porters%2Fdrivers"
+       target="_blank" class="wa-bubble-open">Open chat</a>
+  </div>
+  <a href="https://wa.me/34640194369?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20porters%2Fdrivers"
+     target="_blank" class="wa-float-btn" aria-label="Contact us on WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30"><path fill="#fff" d="M16.001 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.258.591 4.44 1.712 6.366L3.2 28.8l6.6-1.674a12.73 12.73 0 0 0 6.2 1.578h.001c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.8-12.8-12.8zm0 23.36a10.53 10.53 0 0 1-5.36-1.47l-.385-.228-3.917.993 1.02-3.815-.25-.393a10.53 10.53 0 0 1-1.628-5.647c0-5.85 4.76-10.61 10.62-10.61 5.85 0 10.61 4.76 10.61 10.61 0 5.85-4.76 10.56-10.61 10.56zm5.815-7.945c-.318-.159-1.884-.93-2.176-1.036-.291-.106-.503-.159-.715.16-.212.318-.822 1.035-1.008 1.247-.185.212-.371.238-.688.08-.318-.159-1.343-.495-2.558-1.578-.946-.844-1.585-1.885-1.77-2.203-.186-.318-.02-.49.14-.649.143-.142.318-.371.477-.556.16-.186.212-.318.318-.53.106-.212.053-.397-.026-.556-.08-.159-.715-1.723-.98-2.36-.258-.62-.52-.536-.715-.546l-.609-.011c-.212 0-.556.08-.847.397-.291.318-1.11 1.085-1.11 2.646 0 1.56 1.137 3.068 1.296 3.28.159.212 2.238 3.417 5.423 4.79.758.327 1.35.522 1.812.669.761.242 1.454.208 2.002.126.611-.091 1.884-.77 2.15-1.513.264-.742.264-1.379.185-1.512-.08-.132-.291-.212-.609-.371z"/></svg>
+  </a>
+</div>
+
+<script src="js/whatsapp-widget.js"></script>
 </body>
 
 </html>
