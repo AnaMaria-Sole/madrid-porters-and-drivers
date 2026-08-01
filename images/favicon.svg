@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(4.936565137976996,0,0,4.936565137976996,0,103.8900133287259)"><svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1" viewBox="0 0 202.57 160.48" width="202.57" height="160.48"><defs><style>.cls-1{fill:#0057b8;}</style></defs><title>Mesa de trabajo 1</title><path class="cls-1" d="M172,3.67V36.85L3.94,37l0,89.3H31.68l-.25-55.76,28.48,0,0,55.94,28.26-.09,0-55.85H116v86.72h28V125.81h56V3.67Zm-.06,94.62h-28.2V70.09h28.2Z"></path></svg></g></g></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g><g transform="matrix(4.936565137976996,0,0,4.936565137976996,0,103.8900133287259)"><svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1" viewBox="0 0 202.57 160.48" width="202.57" height="160.48"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Mesa de trabajo 1</title><path class="cls-1" d="M172,3.67V36.85L3.94,37v89.3H31.68l-.25-55.76H59.91v55.94l28.26-.09V70.54H116v86.72h28V125.81h56V3.67Zm-.06,94.62h-28.2V70.09h28.2Z"></path></svg></g></g></svg></g></svg>
