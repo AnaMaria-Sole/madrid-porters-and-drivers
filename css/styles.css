@@ -80,7 +80,6 @@ nav a:hover {
 }
 
 /* Carousel */
-/* Carousel */
 .carousel {
   position: relative;
   width: 100%;
@@ -108,9 +107,23 @@ nav a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 30%; /* keeps more of the top of the frame visible */
   display: block;
 }
 
+.carousel-slide:nth-child(2) img {
+  object-position: center 30%; /* the lorry-loading shot — adjust as needed */
+}
+
+.carousel-slide:nth-child(3) img {
+  object-position: center 15%; /* the lorry-loading shot — adjust as needed */
+}
+.carousel-slide:nth-child(5) img {
+  object-position: center 60%; /* the lorry-loading shot — adjust as needed */
+}
+.carousel-slide:nth-child(6) img {
+  object-position: center 60%; /* the lorry-loading shot — adjust as needed */
+}
 /* subtle gradient so dots/arrows stay legible over any photo */
 .carousel::after {
   content: "";
