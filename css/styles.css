@@ -2,6 +2,10 @@
 /* MADRID PORTERS AND DRIVERS - COMPLETE STYLES  */
 /* ============================================= */
 
+:root {
+  --primary: #0057b8;
+}
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
@@ -17,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background: #0057b8;
+  background: var(--primary);
   color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
@@ -76,45 +80,112 @@ nav a:hover {
 }
 
 /* Carousel */
+/* Carousel */
 .carousel {
   position: relative;
-  max-width: 900px;
-  margin: auto;
+  width: 100%;
+  height: 62vh;
+  min-height: 380px;
+  max-height: 620px;
+  overflow: hidden;
+  margin: 0;
 }
 
 .carousel-slide {
-  display: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.1s ease;
+  pointer-events: none;
 }
 
 .carousel-slide.active {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .carousel-slide img {
-  width: fit-content;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
+/* subtle gradient so dots/arrows stay legible over any photo */
+.carousel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 45%);
+  pointer-events: none;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.carousel-arrow:hover,
+.carousel-arrow:focus-visible {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-arrow-prev { left: 16px; }
+.carousel-arrow-next { right: 16px; }
+
 .carousel-dots {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
   text-align: center;
-  margin-top: 15px;
+  z-index: 5;
 }
 
 .carousel-dot {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   margin: 0 5px;
   border-radius: 50%;
-  background: #bbb;
+  background: rgba(255, 255, 255, 0.5);
   display: inline-block;
   cursor: pointer;
 }
 
 .carousel-dot.active {
-  background: #333;
+  background: #fff;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .carousel-slide { transition: none; }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 46vh;
+    min-height: 280px;
+  }
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+}
 /* Content */
 .services-container {
   max-width: 750px;
@@ -148,20 +219,19 @@ nav a:hover {
 .hero-h1 {
   max-width: 600px;
   font-size: 1.75em;
-  color: #0057b8;
+  color: var(--primary);
   text-align: center;
   margin: 5px auto;
   padding-left: 40px;
 }
 .service-title {
   font-size: 1.75em;
-  color: #0057b8;
-
+  color: var(--primary);
   margin: 5px auto;
 }
 .equipment-title {
   font-size: 1.75em;
-  color: #0057b8;
+  color: var(--primary);
   text-align: center;
   margin: 5px 25%;
 }
@@ -195,7 +265,7 @@ nav a:hover {
 
 .contact-heading {
   font-size: 1.3em;
-  color: #0057b8;
+  color: var(--primary);
   margin-bottom: 20px;
 }
 
@@ -234,7 +304,7 @@ nav a:hover {
 }
 
 .btn-email {
-  background-color: #0057b8;
+  background-color: var(--primary);
   color: #ffffff;
 }
 
@@ -298,6 +368,18 @@ nav a:hover {
   padding: 20px;
   background: #1a1a1a;
   color: #aaa;
+}
+
+.footer-section p a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer .icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 /* Floating WhatsApp widget */
@@ -382,7 +464,7 @@ nav a:hover {
 
 .wa-bubble-open {
   display: inline-block;
-  background: #0057b8;
+  background: var(--primary);
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -439,7 +521,7 @@ nav a:hover {
  }
 .nationwide-title {
   font-size: 1.75em;
-  color: #0057b8;
+  color: var(--primary);
   margin: 5px auto;
 }
 
@@ -548,12 +630,12 @@ nav a:hover {
   .transparency-section {
     max-width: 250px;
   }
-  transparency-text {
+ /* .transparency-text {
     font-size: 0.9rem;
   }
 
-  map-section {
+  .map-section {
     padding-left: 20px;
     padding-right: 20px;
-  }
+  }*/
 }

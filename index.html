@@ -45,44 +45,38 @@
 
 
     <!--Carousel section-->
-    <main>
-        <div class="carousel" id="mainCarousel">
-            <div class="carousel-slide active">
-                <img src="images/madrid-porters-family-moving-sofa-madrid-spain.jpg"
-                    alt="English speaking porters Madrid carrying sofa">
-            </div>
-            <div class="carousel-slide">
-                <img src="images/madrid-porters-outdoor-furniture-move-assistance-spain.jpg"
-                    alt="Madrid porters outdoor furniture move">
-            </div>
-            <div class="carousel-slide">
-                <img src="images/madrid-porters-team-loading-international-lorry-spain.jpg"
-                    alt="Madrid porters unloading international lorry">
-            </div>
-            <div class="carousel-slide">
-                <img src="images/madrid-porters-carrying-furniture-up-stairs-madrid-spain.jpg"
-                    alt="Madrid porters carrying furniture up stairs">
-            </div>
-            <div class="carousel-slide">
-                <img src="images/madrid-porters-warehouse-goods-handling-loading-truck-spain.jpg"
-                    alt="Madrid porters warehouse goods handling">
-            </div>
-            <div class="carousel-slide">
-                <img src="images/madrid-porters-furniture-disassembly-reassembly-service-spain.jpg"
-                    alt="Madrid porters furniture disassembly">
-            </div>
-
-            <div class="carousel-dots">
-
-                <span class="carousel-dot active" onclick="currentSlide(1)"></span>
-                <span class="carousel-dot" onclick="currentSlide(2)"></span>
-                <span class="carousel-dot" onclick="currentSlide(3)"></span>
-                <span class="carousel-dot" onclick="currentSlide(4)"></span>
-                <span class="carousel-dot" onclick="currentSlide(5)"></span>
-                <span class="carousel-dot" onclick="currentSlide(6)"></span>
-            </div>
-
+    <main id="main">
+    <section class="carousel" id="mainCarousel" role="region" aria-label="Photo gallery">
+        <div class="carousel-slide active">
+            <img src="images/madrid-porters-family-moving-sofa-madrid-spain.jpg"
+                alt="English speaking porters Madrid carrying sofa">
         </div>
+        <div class="carousel-slide">
+            <img src="images/madrid-porters-outdoor-furniture-move-assistance-spain.jpg"
+                alt="Madrid porters outdoor furniture move" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+            <img src="images/madrid-porters-team-loading-international-lorry-spain.jpg"
+                alt="Madrid porters unloading international lorry" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+            <img src="images/madrid-porters-carrying-furniture-up-stairs-madrid-spain.jpg"
+                alt="Madrid porters carrying furniture up stairs" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+            <img src="images/madrid-porters-warehouse-goods-handling-loading-truck-spain.jpg"
+                alt="Madrid porters warehouse goods handling" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+            <img src="images/madrid-porters-furniture-disassembly-reassembly-service-spain.jpg"
+                alt="Madrid porters furniture disassembly" loading="lazy">
+        </div>
+
+        <button class="carousel-arrow carousel-arrow-prev" aria-label="Previous slide">&#10094;</button>
+        <button class="carousel-arrow carousel-arrow-next" aria-label="Next slide">&#10095;</button>
+
+        <div class="carousel-dots"></div>
+    </section>
 
     </main>
 
@@ -193,7 +187,7 @@
         <p style="margin-top: 0.8rem; font-size: 0.95rem; color: #64748b;">Travel over 30 mins from base charged at
             €35/hour (time as per Google Maps + fuel).</p>
     </section>
-
+</main>
     <footer>
        <div class="footer">
             <div class="footer-section">
@@ -205,8 +199,11 @@
             </div>
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <p><a href="https://wa.me/34640194369" target="_blank" rel="noopener noreferrer"><img src="images/whatsapp-icon-white.svg" class="icon icon-whatsapp" alt="WhatsApp">WhatsApp: +34 640 19 43 69</a></p>
-                <p><a href="mailto:madridpandd@gmail.com"><img src="images/email-icon-white.svg" class="icon icon-email" alt="Email">madridpandd@gmail.com</a></p>
+                <p><a href="https://wa.me/34640194369" target="_blank" rel="noopener noreferrer">
+  <img src="images/whatsapp-icon-yellow.svg" class="icon icon-whatsapp" alt="WhatsApp">
+  <span>WhatsApp: +34 640 19 43 69</span>
+</a></p>
+                <p><a href="mailto:madridpandd@gmail.com"><img src="images/email-icon-yellow.svg" class="icon icon-email" alt="Email">madridpandd@gmail.com</a></p>
                 <p>Response within minutes during working hours.</p>
             </div>
            
