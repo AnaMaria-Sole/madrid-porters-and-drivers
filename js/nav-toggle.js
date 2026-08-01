@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburger.setAttribute("aria-expanded", isOpen);
   });
 
-  // Close menu when a link is tapped (nice on mobile)
   nav.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
       nav.classList.remove("open");
