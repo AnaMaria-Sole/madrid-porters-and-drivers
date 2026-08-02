@@ -536,7 +536,11 @@ nav a[aria-current="page"] {
 }
 .final-cta-note {
   color: #cdd3e0;
+  margin: 0 0 8px;
+}
+.final-cta-note-secondary {
   margin: 0 0 26px;
+  font-size: 0.92rem;
 }
 .final-cta-phone {
   margin: 22px 0 0;
@@ -718,6 +722,189 @@ nav a[aria-current="page"] {
 .wa-bubble-close:hover { color: #333; }
 .wa-bubble.wa-hidden { display: none; }
 
+/* ============ TERMS / CLAUSES ============ */
+.terms-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 24px 20px;
+}
+.clause-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--paper-line);
+}
+.clause-item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 32px 4px;
+  border-bottom: 1px solid var(--paper-line);
+}
+.clause-code {
+  margin-top: 4px;
+}
+.clause-copy h2 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 12px;
+  letter-spacing: 0.01em;
+}
+.clause-copy p {
+  color: #334155;
+  margin: 0 0 12px;
+}
+.clause-copy p:last-child {
+  margin-bottom: 0;
+}
+.clause-list-items {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  color: #334155;
+}
+.clause-list-items li {
+  margin: 8px 0;
+}
+.clause-copy .rates-table-wrapper {
+  margin: 16px 0 0;
+}
+
+/* ============ REVIEW CAROUSEL ============ */
+.reviews-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 24px 20px;
+}
+
+.reviews-carousel {
+  background: transparent;
+  height: auto;
+  min-height: 400px;
+  max-height: none;
+}
+.reviews-carousel::after {
+  content: none;
+}
+.reviews-carousel .carousel-slide {
+  display: flex;
+  align-items: stretch;
+}
+.reviews-carousel .carousel-arrow {
+  background: var(--paper);
+  border: 1px solid var(--paper-line);
+  color: var(--ink);
+  top: 50%;
+}
+.reviews-carousel .carousel-arrow:hover,
+.reviews-carousel .carousel-arrow:focus-visible {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+.reviews-carousel .carousel-arrow-prev { left: -8px; }
+.reviews-carousel .carousel-arrow-next { right: -8px; }
+.reviews-carousel .carousel-dots {
+  position: static;
+  text-align: center;
+  margin-top: 20px;
+}
+.reviews-carousel .carousel-dot {
+  background: var(--paper-line);
+}
+.reviews-carousel .carousel-dot.active {
+  background: var(--primary);
+}
+
+.review-ticket {
+  background: #fff;
+  border: 1px solid var(--paper-line);
+  border-left: 4px dashed var(--primary);
+  border-radius: 4px;
+  padding: 34px 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.review-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0 0 14px;
+}
+.review-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--amber);
+  color: var(--ink);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.review-name {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: var(--ink);
+}
+.review-route {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0 0 18px;
+}
+.review-quote {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: #334155;
+  margin: 0;
+}
+.review-company {
+  font-weight: 700;
+  color: var(--ink);
+  margin: 14px 0 0;
+}
+
+/* Review badges */
+.review-badges-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 24px;
+  text-align: center;
+}
+.review-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.badge-img {
+  height: 54px;
+  width: auto;
+}
+.badge-link {
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+.badge-link:hover {
+  transform: translateY(-2px);
+}
+
 /* ============ PAGE BANNER (rates / interior pages) ============ */
 .page-band {
   background: var(--ink);
@@ -883,6 +1070,12 @@ nav a[aria-current="page"] {
   }
 
   .manifest-item { flex-direction: column; gap: 8px; }
+  .clause-item { flex-direction: column; gap: 8px; padding: 24px 4px; }
 
   .rates-table-wrapper { font-size: 0.92rem; }
+
+  .review-ticket { padding: 26px 20px; }
+  .reviews-carousel .carousel-arrow-prev { left: 4px; }
+  .reviews-carousel .carousel-arrow-next { right: 4px; }
+  .reviews-section { padding: 40px 16px 10px; }
 }
