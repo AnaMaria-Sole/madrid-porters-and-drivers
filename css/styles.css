@@ -150,6 +150,22 @@ nav a[aria-current="page"] {
   display: block;
 }
 
+.carousel-slide:nth-child(1) img {
+  object-position: 100% 45%; 
+}
+
+.carousel-slide:nth-child(2) img {
+  object-position: 100% 50%; 
+}
+
+.carousel-slide:nth-child(5) img {
+  object-position: 50% 70%;
+}
+
+.carousel-slide:nth-child(6) img {
+  object-position: center 70%;
+}
+
 .carousel::after {
   content: "";
   position: absolute;
@@ -1055,6 +1071,25 @@ nav a[aria-current="page"] {
     max-width: none;
     padding: 20px 18px 24px;
   }
+
+  .carousel-slide:nth-child(1) img {
+  object-position: 100% 100%;
+}
+.carousel-slide:nth-child(3) img {
+  object-position: 100% 20%;
+}
+
+.carousel-slide:nth-child(4) img {
+  object-position: center 80%;
+}
+
+.carousel-slide:nth-child(5) img {
+  object-position: center 100%;
+}
+
+.carousel-slide:nth-child(6) img {
+  object-position: 20% 80%;
+}
   .ticket-title { font-size: 1.4rem; }
   .ticket-fields { grid-template-columns: repeat(2, auto); gap: 14px 20px; }
   .carousel-arrow { width: 36px; height: 36px; font-size: 1rem; }
