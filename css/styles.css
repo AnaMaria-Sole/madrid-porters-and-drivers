@@ -151,16 +151,20 @@ nav a[aria-current="page"] {
 }
 
 .carousel-slide:nth-child(1) img {
-  object-position: 100% 45%; 
+  object-position: 100% 30%; 
 }
 
 .carousel-slide:nth-child(2) img {
-  object-position: 100% 50%; 
+  object-position: 100% 40%; 
 }
 
+.carousel-slide:nth-child(43) img {
+  object-position: 0% 50%; 
+}
 .carousel-slide:nth-child(5) img {
   object-position: 50% 70%;
 }
+
 
 .carousel-slide:nth-child(6) img {
   object-position: center 70%;
@@ -1079,6 +1083,10 @@ nav a[aria-current="page"] {
 }
 .carousel-slide:nth-child(3) img {
   object-position: 100% 20%;
+}
+
+.carousel-slide:nth-child(2) img {
+  object-position: 60% 40%;
 }
 
 .carousel-slide:nth-child(4) img {
